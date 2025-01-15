@@ -23,8 +23,8 @@ const services = [
   },
   {
     id: 5,
-    title: "Content Writing",
-    description: "Writing content for your business and companies.",
+    title: "Mobile development",
+    description: "Developping mobile app for you buisness",
   },
   {
     id: 6,
