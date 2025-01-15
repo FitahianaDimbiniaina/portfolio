@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkedAlt, FaPhone, FaPaperPlane } from 'react-icons/fa'; // Using paper plane icon
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -24,10 +24,10 @@ const Contact = () => {
 
         emailjs
             .send(
-                'service_uc363e1', 
+                'service_uc363e1',
                 'template_oh6ien2',
                 formData,
-                '7MGrqlQHso_aTNqfr' 
+                '7MGrqlQHso_aTNqfr'
             )
             .then(
                 (response) => {
@@ -70,7 +70,7 @@ const Contact = () => {
                             <span>Ambohibao, Antananarivo, Madagascar</span>
                         </div>
                     </div>
-                    <div className="flex-1 w-full">
+                    <div className="flex-1 w-full relative">
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block mb-2">
@@ -102,7 +102,7 @@ const Contact = () => {
                                     required
                                 />
                             </div>
-                            <div>
+                            <div className="relative">
                                 <label htmlFor="message" className="block mb-2">
                                     Message
                                 </label>
@@ -116,14 +116,14 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                 />
+                                <button
+                                    type="submit"
+                                    className="absolute right-3 bottom-3 bg-transparent text-white 
+                                    transform transition-transform duration-300 hover:text-green-400"
+                                >
+                                    <FaPaperPlane size={24} />
+                                </button>
                             </div>
-                            <button
-                                type="submit"
-                                className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-                                transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
-                            >
-                                Send
-                            </button>
                             <p>{status}</p>
                         </form>
                     </div>
