@@ -12,7 +12,7 @@ const projects = [
       "PaperTrail is an intuitive letter management app built with React, Node.js, and MySQL. It allows users to easily organize, store, and retrieve letters, ensuring fast access and efficient management. With a seamless interface and reliable backend, PaperTrail is the perfect solution for businesses and professionals looking to streamline their correspondence",
     image: paperTrail,
     github: "https://github.com/YouafKhan1",
-    liveDemo: "https://github.com/YouafKhan1",
+    liveDemo: "",
   },
   {
     id: 2,
