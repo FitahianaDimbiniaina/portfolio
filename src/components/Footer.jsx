@@ -40,16 +40,16 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Dimbiniaina Fitahiana. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://www.facebook.com/fitahiana.razafi/" className="text-gray-400 hover:text-white">
               <FaFacebook />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://x.com/Fitahia76663081?t=Ama1q3a7CZHIF9dVQfvoxA&s=09" className="text-gray-400 hover:text-white">
               <FaTwitter />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/fitahiana-razafimahatratra-14940b335" className="text-gray-400 hover:text-white">
               <FaLinkedin />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://github.com/FitahianaDimbiniaina" className="text-gray-400 hover:text-white">
               <FaGithub />
             </a>
           </div>
